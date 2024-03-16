@@ -130,3 +130,10 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
+
+# Конфигурация сервера электронной почты
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'alykovyaroslav@gmail.com'
+EMAIL_HOST_PASSWORD = 'pegb xpod fiom ysna'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
