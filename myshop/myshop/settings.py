@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,8 @@ EMAIL_HOST_USER = 'alykovyaroslav@gmail.com'
 EMAIL_HOST_PASSWORD = 'pegb xpod fiom ysna'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+# Настроечные параметры Stripe
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OuvRv2KQOexhk4fAavVeuOqpnMzSUlzkqZvArfcIlm5Mkov4oaMZplcjtVogki1TCNBSBaaOLs3OK910ctGvFu700Oaq0PnAv' # Публикуемый ключ
+STRIPE_SECRET_KEY = 'sk_test_51OuvRv2KQOexhk4fWoYBbOiKATe1fECu8LJ3bTVhF47I0boEzjAc0umvDOpBJWJpRC33rRAmbcWv6SP2FEowj9nZ00XvjKcT5M' # Секретный ключ
+STRIPE_API_VERSION = '2022-08-01'
